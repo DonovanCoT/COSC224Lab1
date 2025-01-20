@@ -31,6 +31,10 @@ document.getElementById("btn").addEventListener("click", function(){
 	if(document.getElementById("q10")[0].checked){
 		score ++;
 	}
+	
+	let display = document.createElement("p");
+	display.innerText = score;
+	document.body.appendChild(display);
 	console.log(score);
 });
 
